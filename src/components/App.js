@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
+import EarthquakeList from './EarthquakeList';
+import moment from 'moment'
+import EarthquakeInfo from './EarthquakeInfo'
 
 class App extends Component {
   render() {
@@ -9,6 +12,8 @@ class App extends Component {
           <div className="my-header">
             Earthquakes!
           </div>
+          <EarthquakeInfo />
+          <EarthquakeList />
         </div>
       </div>
     );
